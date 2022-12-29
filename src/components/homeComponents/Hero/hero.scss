@@ -1,0 +1,48 @@
+@import "../../../gobal.scss";
+
+.hero{
+    @include flex-between();
+    color: $colorWhite;
+}
+
+.heroText{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+
+.hero img{
+    width: 60vw;
+}
+
+.heroBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 3rem;
+    font-size: 0.5rem;
+}
+
+.getStr{
+    cursor: pointer;
+    color: #1f184e;
+    background-color:#5dc6d6;
+    border: 2px solid #5dc6d6;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.howIt{
+    cursor: pointer;
+    border: 2px solid #5dc6d6;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.7s;
+}
+
+.howIt:hover{
+    background-color: #5dc6d6;
+    color: #1f184e;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/homeComponents/Hero/Hero';
+import { TeamImg } from './components/TeamImg/TeamImg';
+import img from "./img/heroImg.png"
 
-function App() {
+const App = () => {
+  //js kod
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <TeamImg teamName="IT tim" teamDesc="Bas dobar tim" />
+      <TeamImg teamName="PR tim" teamDesc="Dobri al ne kao it tim" img={img} />
+      <TeamImg teamName="HR tim" teamDesc="Dobri al ne kao it tim" img={img} />
+      <TeamImg teamName="CR tim" teamDesc="Bas dobar tim" img={img} />
     </div>
   );
 }
